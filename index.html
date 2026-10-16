@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuyrudh Singh | Air Buds</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #151515;
+        }
+
+        header h2 {
+            color: #00f5a0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: radial-gradient(circle, #163d32, #0b0b0b 70%);
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 7vw, 65px);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #00f5a0;
+        }
+
+        .hero p {
+            color: #cccccc;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .buds {
+            font-size: 100px;
+            margin: 15px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #00f5a0;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00f5a0;
+            color: #07120d;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .features {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #191919;
+            padding: 28px 15px;
+            border-radius: 18px;
+            border: 1px solid #333;
+        }
+
+        .card h3 {
+            color: #00f5a0;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #151515;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>AirBuds.</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Feel The <span>Music.</span></h1>
+
+        <p>Wireless Freedom. Powerful Sound.</p>
+
+        <div class="buds">🎧</div>
+
+        <div class="price">₹1,999</div>
+
+        <button class="btn" onclick="buyNow()">
+            Buy Now
+        </button>
+
+        <p id="message" style="margin-top:20px;"></p>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose AirBuds?</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🔊 HD Sound</h3>
+                <p>Enjoy clear and powerful audio.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔋 Long Battery</h3>
+                <p>Listen to music on the go.</p>
+            </div>
+
+            <div class="card">
+                <h3>📶 Bluetooth</h3>
+                <p>Wireless connection for your devices.</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Water Resistant</h3>
+                <p>Designed for everyday use.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Anuyrudh Singh © 2026</p>
+    </footer>
+
+    <script>
+        function buyNow() {
+            document.getElementById("message").innerText =
+                "Thank you for your interest in AirBuds!";
+        }
+    </script>
+
+</body>
+</html>
